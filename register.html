@@ -24,10 +24,11 @@
         </section>
 
         <section>
+    
+
             <form action="#" method="post">
 
-                <h2>Iniciar sesión</h2>
-                <p>Introduce tus datos en un formato adecuado. Escoge una contraseña segura</p>
+                <h2>Creación de una nueva cuenta</h2>
                 <fieldset>
                     <legend>Introduce tus datos</legend>
 
@@ -36,22 +37,29 @@
                         <input type="text" id="name_id" name="nombre">
                     </p>
 
-                   
+                    <p>
+                        <label for="apellido_id">Apellido:</label><br>
+                        <input type="text" id="apellido_id" name="apellido">
+                    </p>
 
                     <p>
                         <label for="email_id">Email:</label><br>
                         <input type="email" id="email_id" name="email" required>
                     </p>
+                    <p>
+                        <label for="phone_id">Teléfono:</label><br>
+                        <input type="tel" id="phone_id" name="telefono">
+                    </p>
+
+                    <p>
+                        <label for="contrasena_id">Contraseña:</label><br>
+                        <input type="text" id="contrasena_id" name="contrasena">
+                    </p>
                 </fieldset>
 
             </form>
 
-            <p>Si no has iniciado sesión, puedes crear una cuenta</p>
-            <nav>
-                <a href="register.html">Crea una cuenta </a>
-                
-            </nav>
-            
+
         </section>
     </main>
 
