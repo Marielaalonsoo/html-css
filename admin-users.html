@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Administrar Usuarios | PistaPadel</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="admin-header">
+    <div class="container header-flex">
+      <h1 class="logo-text">PistaPadel Admin</h1>
+
+      <nav class="navbar">
+        <ul class="nav-list">
+          <li><a href="admin-dashboard.html" class="nav-link">Dashboard</a></li>
+          <li><a href="admin-courts.html" class="nav-link">Pistas</a></li>
+          <li><a href="admin-users.html" class="nav-link active">Usuarios</a></li>
+          <li><a href="admin-reservations.html" class="nav-link">Reservas</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="admin-main">
+    <section class="container page-header">
+      <h2>Gestión de Usuarios</h2>
+      <p>Consulta y edición de usuarios registrados.</p>
+    </section>
+
+    <section class="container admin-grid-2">
+      <article class="admin-panel">
+        <div class="panel-header">
+          <h3>Buscar usuario</h3>
+        </div>
+
+        <form id="searchUserForm" class="admin-form">
+          <div class="form-group">
+            <label for="searchUserId">ID del usuario</label>
+            <input type="number" id="searchUserId" name="userId" placeholder="Ej: 3" required />
+          </div>
+
+          <button type="submit" class="btn btn-primary">Cargar usuario</button>
+        </form>
+
+        <div class="user-detail-box" id="userDetailBox">
+          <p>Aquí se mostrará el detalle del usuario seleccionado.</p>
+        </div>
+      </article>
+
+      <article class="admin-panel">
+        <div class="panel-header">
+          <h3>Editar usuario</h3>
+        </div>
+
+        <form id="editUserForm" class="admin-form">
+          <div class="form-group">
+            <label for="editUserId">ID usuario</label>
+            <input type="number" id="editUserId" name="userId" required />
+          </div>
+
+          <div class="form-group">
+            <label for="editUserName">Nombre</label>
+            <input type="text" id="editUserName" name="nombre" placeholder="Nuevo nombre" />
+          </div>
+
+          <div class="form-group">
+            <label for="editUserSurname">Apellidos</label>
+            <input type="text" id="editUserSurname" name="apellidos" placeholder="Nuevos apellidos" />
+          </div>
+
+          <div class="form-group">
+            <label for="editUserEmail">Email</label>
+            <input type="email" id="editUserEmail" name="email" placeholder="Nuevo email" />
+          </div>
+
+          <div class="form-group">
+            <label for="editUserPhone">Teléfono</label>
+            <input type="text" id="editUserPhone" name="telefono" placeholder="Nuevo teléfono" />
+          </div>
+
+          <button type="submit" class="btn btn-primary">Guardar cambios</button>
+        </form>
+      </article>
+    </section>
+
+    <section class="container admin-panel">
+      <div class="panel-header panel-header-between">
+        <h3>Listado de usuarios</h3>
+        <button class="btn btn-secondary" id="loadUsersBtn">Actualizar lista</button>
+      </div>
+
+      <div class="table-wrapper">
+        <table class="admin-table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Nombre</th>
+              <th>Apellidos</th>
+              <th>Email</th>
+              <th>Teléfono</th>
+              <th>Rol</th>
+              <th>Activo</th>
+              <th>Fecha registro</th>
+              <th>Acciones</th>
+            </tr>
+          </thead>
+          <tbody id="usersTableBody">
+            <tr>
+              <td colspan="9">Aquí se cargarán los usuarios.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
