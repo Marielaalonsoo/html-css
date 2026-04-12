@@ -1,71 +1,95 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Principal</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Registro</title>
+    <link rel="stylesheet" href="../../estilo/css/index.css">
+    <link rel="stylesheet" href="../../estilo/css/paginas/register.css">
 </head>
 
 <body>
-    <header>
-        <h1>App Padel</h1>
-        <nav>
-            <a href="index.html">Principal</a>
-            <a href="auth/login.html">Identifícate</a>
-            <a href="reservas.html">Reservas</a>
-    
+    <header class="header">
+        <div class="logo">
+            <h1>Club de Pádel Comillas</h1>
+        </div>
+
+        <nav class="nav">
+            <a href="../../index.html">Inicio</a>
+            <a href="../pistas.html">Pistas</a>
+            <a href="../reservas.html">Reservas</a>
+            <a href="../profile.html">Perfil</a>
+            <a href="./login.html">Iniciar sesión</a>
+            <a href="./register.html" class="nav-button">Registrarse</a>
         </nav>
     </header>
 
-     <main>
-        <section>
-            <p>En esta página se puede realizar un pedido de productos del Atlético de Madrid mediante un formulario.</p>
+    <main>
+        <section class="pagina-titulo">
+            <h2>Crear una cuenta</h2>
+            <p>
+                Regístrate para empezar a reservar pistas y gestionar tu actividad dentro del club.
+            </p>
         </section>
 
-        <section>
-    
-
-            <form action="#" method="post">
-
-                <h2>Creación de una nueva cuenta</h2>
-                <fieldset>
-                    <legend>Introduce tus datos</legend>
-
-                    <p>
-                        <label for="name_id">Nombre:</label><br>
-                        <input type="text" id="name_id" name="nombre">
+        <section class="register-section">
+            <div class="register-card">
+                <form class="register-form" action="#" method="post">
+                    <h3>Nueva cuenta</h3>
+                    <p class="form-text">
+                        Completa el formulario con tus datos personales.
                     </p>
 
-                    <p>
-                        <label for="apellido_id">Apellido:</label><br>
-                        <input type="text" id="apellido_id" name="apellido">
-                    </p>
+                    <fieldset>
+                        <legend>Introduce tus datos</legend>
 
-                    <p>
-                        <label for="email_id">Email:</label><br>
-                        <input type="email" id="email_id" name="email" required>
-                    </p>
-                    <p>
-                        <label for="phone_id">Teléfono:</label><br>
-                        <input type="tel" id="phone_id" name="telefono">
-                    </p>
+                        <div class="register-grid">
+                            <div class="form-group">
+                                <label for="name_id">Nombre</label>
+                                <input type="text" id="name_id" name="nombre" placeholder="Introduce tu nombre">
+                            </div>
 
-                    <p>
-                        <label for="contrasena_id">Contraseña:</label><br>
-                        <input type="text" id="contrasena_id" name="contrasena">
-                    </p>
-                </fieldset>
+                            <div class="form-group">
+                                <label for="apellido_id">Apellido</label>
+                                <input type="text" id="apellido_id" name="apellido" placeholder="Introduce tu apellido">
+                            </div>
 
-            </form>
+                            <div class="form-group">
+                                <label for="email_id">Email</label>
+                                <input type="email" id="email_id" name="email" required placeholder="Introduce tu correo">
+                            </div>
 
+                            <div class="form-group">
+                                <label for="phone_id">Teléfono</label>
+                                <input type="tel" id="phone_id" name="telefono" placeholder="Introduce tu teléfono">
+                            </div>
 
+                            <div class="form-group form-group-full">
+                                <label for="contrasena_id">Contraseña</label>
+                                <input type="password" id="contrasena_id" name="contrasena" placeholder="Introduce una contraseña segura">
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <div class="form-button">
+                        <button type="submit" class="button-primary">Crear cuenta</button>
+                    </div>
+                </form>
+
+                <div class="register-extra">
+                    <p>¿Ya tienes cuenta?</p>
+                    <a href="./login.html" class="button-secondary">Iniciar sesión</a>
+                </div>
+            </div>
         </section>
     </main>
 
-
-
-    
+    <footer class="footer">
+        <div class="footer-content">
+            <p><strong>Club de Pádel Comillas.</strong></p>
+            <p>Tu aplicación para reservar pistas de pádel fácilmente.</p>
+            <p>Horario del club: 08:00 - 23:00</p>
+        </div>
+    </footer>
 </body>
-
 </html>
