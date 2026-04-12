@@ -1,118 +1,70 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Admin Dashboard | PistaPadel</title>
-  <link rel="stylesheet" href="css/style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Panel de Administración</title>
+    <link rel="stylesheet" href="../../estilo/css/index.css" />
+    <link rel="stylesheet" href="../../estilo/css/paginas/admin-dash.css" />
 </head>
 <body>
-  <header class="admin-header">
-    <div class="container header-flex">
-      <div class="logo-box">
-        <h1 class="logo-text">PistaPadel Admin</h1>
-      </div>
+    <header class="admin-header">
+        <div class="container header-flex">
+            <div class="logo-box">
+                <h1 class="logo-text">PistaPadel Admin</h1>
+            </div>
 
-      <nav class="navbar">
-        <ul class="nav-list">
-          <li><a href="admin-dashboard.html" class="nav-link active">Dashboard</a></li>
-          <li><a href="admin-courts.html" class="nav-link">Pistas</a></li>
-          <li><a href="admin-users.html" class="nav-link">Usuarios</a></li>
-          <li><a href="admin-reservations.html" class="nav-link">Reservas</a></li>
-          <li><a href="index.html" class="nav-link">Volver al sitio</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <main class="admin-main">
-    <section class="container page-header">
-      <h2>Panel de Administración</h2>
-      <p>Gestiona pistas, usuarios y reservas del sistema.</p>
-    </section>
-
-    <section class="container stats-grid">
-      <article class="stat-card">
-        <h3>Total pistas</h3>
-        <p class="stat-number" id="totalCourts">--</p>
-        <a href="admin-courts.html" class="btn btn-primary">Gestionar pistas</a>
-      </article>
-
-      <article class="stat-card">
-        <h3>Total usuarios</h3>
-        <p class="stat-number" id="totalUsers">--</p>
-        <a href="admin-users.html" class="btn btn-primary">Gestionar usuarios</a>
-      </article>
-
-      <article class="stat-card">
-        <h3>Reservas del día</h3>
-        <p class="stat-number" id="todayReservations">--</p>
-        <a href="admin-reservations.html" class="btn btn-primary">Ver reservas</a>
-      </article>
-
-      <article class="stat-card">
-        <h3>Pistas activas</h3>
-        <p class="stat-number" id="activeCourts">--</p>
-        <a href="admin-courts.html" class="btn btn-secondary">Ver activas</a>
-      </article>
-    </section>
-
-    <section class="container dashboard-grid">
-      <article class="dashboard-panel">
-        <div class="panel-header">
-          <h3>Accesos rápidos</h3>
+            <nav class="navbar">
+                <ul class="nav-list">
+                    <li><a href="./admin-dashboard.html" class="nav-link active">Dashboard</a></li>
+                    <li><a href="./admin-courts.html" class="nav-link">Pistas</a></li>
+                    <li><a href="./admin-users.html" class="nav-link">Usuarios</a></li>
+                    <li><a href="./admin-reservations.html" class="nav-link">Reservas</a></li>
+                    <li><a href="../../index.html" class="nav-link">Volver al sitio</a></li>
+                </ul>
+            </nav>
         </div>
+    </header>
 
-        <div class="quick-actions">
-          <a href="admin-courts.html" class="quick-card">
-            <h4>Crear / editar pistas</h4>
-            <p>Alta, modificación y desactivación de pistas.</p>
-          </a>
+    <main class="admin-main">
+        <section class="container page-header">
+            <h2>Panel de Administración</h2>
+            <p>Gestiona pistas, usuarios y reservas del sistema.</p>
+        </section>
 
-          <a href="admin-users.html" class="quick-card">
-            <h4>Gestionar usuarios</h4>
-            <p>Consulta y edición de datos de usuarios.</p>
-          </a>
+        <section class="container stats-grid">
+            <article class="stat-card">
+                <h3>Total pistas</h3>
+                <p class="stat-number" id="totalCourts"></p>
+                <a href="./admin-courts.html" class="button-primary">Gestionar pistas</a>
+            </article>
 
-          <a href="admin-reservations.html" class="quick-card">
-            <h4>Controlar reservas</h4>
-            <p>Filtra reservas por fecha, pista o usuario.</p>
-          </a>
+            <article class="stat-card">
+                <h3>Total usuarios</h3>
+                <p class="stat-number" id="totalUsers"></p>
+                <a href="./admin-users.html" class="button-primary">Gestionar usuarios</a>
+            </article>
+
+            <article class="stat-card">
+                <h3>Reservas del día</h3>
+                <p class="stat-number" id="todayReservations"></p>
+                <a href="./admin-reservations.html" class="button-primary">Ver reservas</a>
+            </article>
+
+            <article class="stat-card">
+                <h3>Pistas activas</h3>
+                <p class="stat-number" id="activeCourts"></p>
+                <a href="./admin-courts.html" class="button-secondary">Ver activas</a>
+            </article>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p><strong>Club de Pádel Comillas.</strong></p>
+            <p>Panel de administración del sistema.</p>
+            <p>Horario del club: 08:00 - 23:00</p>
         </div>
-      </article>
-
-      <article class="dashboard-panel">
-        <div class="panel-header">
-          <h3>Últimas reservas</h3>
-        </div>
-
-        <div class="table-wrapper">
-          <table class="admin-table">
-            <thead>
-              <tr>
-                <th>ID</th>
-                <th>Usuario</th>
-                <th>Pista</th>
-                <th>Fecha</th>
-                <th>Hora</th>
-                <th>Estado</th>
-              </tr>
-            </thead>
-            <tbody id="latestReservationsTableBody">
-              <tr>
-                <td colspan="6">Aquí se cargarán las últimas reservas.</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </article>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="container">
-      <p>&copy; 2026 PistaPadel - Panel de administración</p>
-    </div>
-  </footer>
+    </footer>
 </body>
 </html>
