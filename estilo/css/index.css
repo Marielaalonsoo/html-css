@@ -1,0 +1,313 @@
+/* Para quitar margenes y rellenos raros por defecto */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Para que las imagenes no se salgan de su contenedor */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Para quitar el subrayado de los enlaces */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Estilo general de toda la pagina */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f5f7fa;
+    color: #1f2937;
+}
+
+/* Para centrar el contenido principal */
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Para los titulos */
+h1, h2, h3 {
+    color: #111827;
+}
+
+/* Para los botones en general */
+.button-primary,
+.button-secondary,
+.nav-button {
+    display: inline-block;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+/* Para el boton principal */
+.button-primary,
+.nav-button {
+    background-color: #1d4ed8;
+    color: white;
+}
+
+/* Para que cambie el color al pasar el raton */
+.button-primary:hover,
+.nav-button:hover {
+    background-color: #1e40af;
+}
+
+/* Para el boton secundario */
+.button-secondary {
+    background-color: white;
+    color: #1d4ed8;
+    border: 2px solid #1d4ed8;
+}
+
+/* Para que se note el hover del boton secundario */
+.button-secondary:hover {
+    background-color: #dbeafe;
+}
+
+/* HEADER */
+/* Para el header */
+.header {
+    background-color: #0f172a;
+    color: white;
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Para el titulo del logo */
+.logo h1 {
+    color: white;
+    font-size: 32px;
+}
+
+/* Para colocar los enlaces del menu */
+.nav {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Para los enlaces del menu */
+.nav a {
+    color: white;
+}
+
+/* Para el efecto hover del menu */
+.nav a:hover {
+    color: #93c5fd;
+}
+
+/* INTRODUCCION */
+/* Para la seccion principal de bienvenida */
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 60px 0;
+    flex-wrap: wrap;
+}
+
+/* Para la parte del texto de bienvenida */
+.intro-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+/* Para el titulo principal */
+.intro-text h2 {
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+/* Para el parrafo principal */
+.intro-text p {
+    font-size: 18px;
+    color: #4b5563;
+    margin-bottom: 25px;
+}
+
+/* Para colocar los botones de la intro */
+.intro-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+/* Para la imagen principal */
+.intro-image {
+    flex: 1;
+    min-width: 300px;
+}
+
+/* Para dar estilo a la imagen */
+.intro-image img {
+    width: 100%;
+    border-radius: 14px;
+}
+
+/* CARACTERISITICAS */
+/* Para la seccion de caracteristicas */
+.caracteristicas {
+    padding: 40px 0;
+}
+
+/* Para el titulo de la seccion */
+.caracteristicas h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 32px;
+}
+
+/* Para colocar las tarjetas en cuadrícula */
+.caracteristicas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Para cada tarjeta */
+.caracteristicas-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Para los titulos de cada tarjeta */
+.caracteristicas-card h3 {
+    margin-bottom: 10px;
+    color: #1d4ed8;
+    font-size: 22px;
+}
+
+/* Para el texto de cada tarjeta */
+.caracteristicas-card p {
+    color: #4b5563;
+    font-size: 16px;
+}
+
+/* INFORMACION DE LA PAGINA */
+/* Para la seccion de informacion */
+.info {
+    padding: 40px 0;
+}
+
+/* Para el titulo de la informacion */
+.info h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 32px;
+}
+
+/* Para colocar los cuados de informacion */
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+/* Para cada cuadro de informacion */
+.info-box {
+    background-color: #e0ecff;
+    padding: 22px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+/* Para los titulos de cada cuadro */
+.info-box h3 {
+    margin-bottom: 10px;
+    color: #1e3a8a;
+    font-size: 22px;
+}
+
+/* Para el texto de cada cuadro */
+.info-box p {
+    color: #374151;
+    font-size: 16px;
+}
+
+/* ZONA DE INICIO DE SESION Y REGISTRO */
+/* Para la seccon final de registro/login */
+.auth {
+    margin: 60px 0;
+    padding: 40px 25px;
+    background-color: #1d4ed8;
+    color: white;
+    text-align: center;
+    border-radius: 16px;
+}
+
+/* Para el titulo de la ultima seccion */
+.auth h2 {
+    color: white;
+    margin-bottom: 15px;
+    font-size: 32px;
+}
+
+/* Para el texto de la ultima seccion */
+.auth p {
+    margin-bottom: 20px;
+    font-size: 17px;
+}
+
+/* Para colocar los botones finales */
+.auth-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+/* Para cambiar el estilo del boton principal dentro de la zona de autentcarse */
+.auth .button-primary {
+    background-color: white;
+    color: #1d4ed8;
+}
+
+/* Para el hover del boton principal dentro de auth */
+.auth .button-primary:hover {
+    background-color: #dbeafe;
+}
+
+/* Para el boton secundario dentro de auth */
+.auth .button-secondary {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+/* Para el hover del boton secundario dentro de auth */
+.auth .button-secondary:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* FOOTER */
+/* Para el footer */
+.footer {
+    background-color: #0f172a;
+    color: white;
+    text-align: center;
+    padding: 25px 5%;
+    margin-top: 40px;
+}
+
+/* Para separar un poco los parrafos del footer */
+.footer-content p {
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+

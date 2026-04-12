@@ -1,0 +1,143 @@
+/* Para el titulo principal de la pagina */
+.pagina-titulo {
+    padding: 40px 0 20px 0;
+    text-align: center;
+}
+
+/* Para el titulo grande */
+.pagina-titulo h2 {
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+
+/* Para el texto debajo del titulo */
+.pagina-titulo p {
+    font-size: 17px;
+    color: #4b5563;
+}
+
+/* Para separar las secciones */
+.filtros-pistas,
+.lista-pistas,
+.info-pistas {
+    margin-bottom: 40px;
+}
+
+/* Para los titulos de cada bloque */
+.filtros-pistas h2,
+.lista-pistas h2,
+.info-pistas h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* Para la caja de filtros */
+.form-filtros {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Para colocar los filtros en cuadrícula */
+.filtros-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+/* Para cada grupo del formulario */
+.filtro-group {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Para las etiquetas */
+.filtro-group label {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+/* Para los inputs y select */
+.filtro-group input,
+.filtro-group select {
+    padding: 10px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+/* Para la cuadrícula de pistas */
+.pistas-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+/* Para cada tarjeta de pista */
+.pista-card {
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Para las imagenes de las pistas */
+.pista-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+/* Para el contenido de cada tarjeta */
+.pista-info {
+    padding: 20px;
+}
+
+/* Para el nombre de cada pista */
+.pista-info h3 {
+    font-size: 24px;
+    margin-bottom: 12px;
+    color: #1d4ed8;
+}
+
+/* Para los textos de cada pista */
+.pista-info p {
+    margin-bottom: 8px;
+    color: #374151;
+}
+
+/* Para que el boton no quede pegado */
+.pista-info a {
+    margin-top: 12px;
+}
+
+/* Para la informacion final */
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* Para cada caja informativa */
+.info-box {
+    background-color: #e0ecff;
+    padding: 22px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+/* Para el titulo de cada caja */
+.info-box h3 {
+    margin-bottom: 10px;
+    color: #1e3a8a;
+    font-size: 22px;
+}
+
+/* Para el texto de cada caja */
+.info-box p {
+    color: #374151;
+    font-size: 16px;
+}
+
