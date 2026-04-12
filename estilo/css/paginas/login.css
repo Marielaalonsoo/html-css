@@ -1,44 +1,19 @@
-/* Para el titulo principal de la pagina */
-.pagina-titulo {
-    padding: 40px 0 20px 0;
-    text-align: center;
-}
-
-/* Para el titulo grande */
-.pagina-titulo h2 {
-    font-size: 34px;
-    margin-bottom: 10px;
-}
-
-/* Para el texto debajo del titulo */
-.pagina-titulo p {
-    font-size: 17px;
-    color: #4b5563;
-}
-
-/* Para la seccion principal de login */
 .login-section {
     padding: 20px 0 60px 0;
 }
 
-/* Para la tarjeta del login */
 .login-card {
     max-width: 700px;
     margin: 0 auto;
-    background-color: white;
     padding: 30px;
-    border-radius: 16px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
-/* Para el titulo interior del formulario */
 .login-form h3 {
     font-size: 28px;
     margin-bottom: 10px;
     text-align: center;
 }
 
-/* Para el texto explicativo */
 .form-text {
     text-align: center;
     color: #4b5563;
@@ -46,7 +21,6 @@
     font-size: 16px;
 }
 
-/* Para el fieldset */
 .login-form fieldset {
     border: 1px solid #dbe2ea;
     border-radius: 12px;
@@ -54,49 +28,20 @@
     margin-bottom: 20px;
 }
 
-/* Para el legend */
 .login-form legend {
     padding: 0 10px;
     font-weight: bold;
     color: #1d4ed8;
 }
 
-/* Para cada grupo del formulario */
-.form-group {
-    display: flex;
-    flex-direction: column;
+.login-form .form-group {
     margin-bottom: 18px;
 }
 
-/* Para que el ultimo no deje margen extra */
-.form-group:last-child {
+.login-form .form-group:last-child {
     margin-bottom: 0;
 }
 
-/* Para las etiquetas */
-.form-group label {
-    font-weight: bold;
-    margin-bottom: 8px;
-    color: #111827;
-}
-
-/* Para los inputs */
-.form-group input {
-    padding: 12px;
-    border: 1px solid #cbd5e1;
-    border-radius: 8px;
-    font-size: 16px;
-    background-color: white;
-}
-
-/* Para el focus de los inputs */
-.form-group input:focus {
-    outline: none;
-    border-color: #1d4ed8;
-    box-shadow: 0 0 0 3px rgba(29, 78, 216, 0.15);
-}
-
-/* Para la zona del boton */
 .form-buttons {
     display: flex;
     gap: 15px;
@@ -104,12 +49,6 @@
     flex-wrap: wrap;
 }
 
-/* Para que ambos botones tengan un ancho parecido */
-.form-buttons .button-primary {
-    text-align: center;
-}
-
-/* Para la zona extra inferior */
 .login-extra {
     margin-top: 25px;
     text-align: center;
@@ -117,7 +56,6 @@
     padding-top: 20px;
 }
 
-/* Para el texto inferior */
 .login-extra p {
     margin-bottom: 15px;
     color: #374151;
