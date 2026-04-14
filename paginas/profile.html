@@ -4,7 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mi perfil | Pista de Pádel</title>
-  <link rel="stylesheet" />
+  <link rel="stylesheet" href="../estilo/css/index.css">
+  <link rel="stylesheet" href="../estilo/css/paginas/profile.css">
 </head>
 <body>
   <header class="topbar">
@@ -13,9 +14,10 @@
     </div>
   </header>
 
-  <main class="container">
-    <section class="card">
+  <main class="container profile-section">
+    <section class="card profile-card">
       <h2>Datos de la cuenta</h2>
+      <p class="form-text">Consulta y modifica tu información personal.</p>
 
       <div id="profileMessage" class="message"></div>
 
@@ -60,7 +62,7 @@
           <input type="tel" id="phone" />
         </div>
 
-        <div class="actions full-width">
+        <div class="profile-button full-width">
           <button type="submit">Guardar cambios</button>
           <button type="button" id="myReservationsBtn">Mis reservas</button>
           <button type="button" id="logoutBtn" class="secondary">Cerrar sesión</button>
